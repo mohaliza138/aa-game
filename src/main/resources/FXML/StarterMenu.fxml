@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.StarterMenuGraphicalController"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="back-ground"
+            prefHeight="500.0" prefWidth="1000.0"
+            onMousePressed="#clickSound">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Welcome to my aa Game!" styleClass="headers"/>
+            <HBox alignment="CENTER" spacing="30">
+                <Button minWidth="200" maxWidth="200" text="Sign up" onMouseClicked="#signUpUser"/>
+                <Button minWidth="200" maxWidth="200" text="Sign in" onMouseClicked="#signInUser"/>
+            </HBox>
+            <HBox alignment="CENTER" spacing="30">
+                <Button minWidth="200" maxWidth="200" text="Play as guest" onMouseClicked="#playAsGuest"/>
+                <Button minWidth="200" maxWidth="200" text="Play pvp as guest" onMouseClicked="#playPvP"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

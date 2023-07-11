@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.ProfileMenuGraphicalController"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="back-ground"
+            prefHeight="800.0" prefWidth="500.0">
+
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Profile" styleClass="headers"/>
+            <ImageView fx:id="currentProfile" fitWidth="300" fitHeight="300">
+                <image>
+                    <Image url="@../Images/Default-male.jpg"/>
+                </image>
+            </ImageView>
+            <HBox alignment="CENTER" spacing="30">
+                <ImageView fitWidth="70" fitHeight="70" onMouseClicked="#setDefaultMaleImage" styleClass="clickable">
+                    <image>
+                        <Image url="@../Images/Default-male.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitWidth="75" fitHeight="75" onMouseClicked="#setCustomImage" styleClass="clickable">
+                    <image>
+                        <Image url="@../Images/plus.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitWidth="70" fitHeight="70" onMouseClicked="#setDefaultFemaleImage" styleClass="clickable">
+                    <image>
+                        <Image url="@../Images/Default-female.jpg"/>
+                    </image>
+                </ImageView>
+            </HBox>
+            <Label text="Username"/>
+            <TextField maxWidth="400" promptText="username" fx:id="username"/>
+            <Label text="Password"/>
+            <TextField maxWidth="400" promptText="password" fx:id="password"/>
+            <Button minWidth="200" maxWidth="200" text="Save" onMouseClicked="#saveButton"/>
+            <Button minWidth="200" maxWidth="200" text="Logout" onMouseClicked="#logout"/>
+            <Button minWidth="200" maxWidth="200" text="Delete account" onMouseClicked="#deleteAccount"/>
+        </VBox>
+    </center>
+</BorderPane>

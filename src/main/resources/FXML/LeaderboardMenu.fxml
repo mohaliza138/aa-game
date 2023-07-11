@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.LeaderboardMenuGraphicalController"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="back-ground"
+            prefHeight="800.0" prefWidth="500.0">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Leaderboard" styleClass="headers"/>
+            <Label fx:id="player1" />
+            <Label fx:id="player2" styleClass="player2"/>
+            <Label fx:id="player3" styleClass="player3"/>
+            <Label fx:id="otherPlayers" styleClass="other-players" textAlignment="CENTER"/>
+            <Label text="sort by difficulty level" styleClass="clickable" onMouseClicked="#basedOnHardship"/>
+            <Button text="Back" onMouseClicked="#backToMain"/>
+        </VBox>
+    </center>
+</BorderPane>

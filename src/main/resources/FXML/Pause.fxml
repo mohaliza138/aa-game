@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.PauseMenu"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="pause-menu"
+            prefHeight="450.0" prefWidth="240.0">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Button text="Resume" prefWidth="150" onMouseClicked="#resume"/>
+            <Button text="Restart" prefWidth="150" onMouseClicked="#restartGame"/>
+            <Button text="Next track" prefWidth="150" onMouseClicked="#nextTrack"/>
+            <Button text="Save game" prefWidth="150" onMouseClicked="#saveGame"/>
+            <Button text="Quit game" prefWidth="150" onMouseClicked="#quitGame"/>
+            <Label text="leftArrow : left"/>
+            <Label text="rightArrow : right"/>
+            <Label text="Space : fire"/>
+            <Label text="Tab : freeze"/>
+            <Label text="Esc : pause"/>
+        </VBox>
+    </center>
+</BorderPane>

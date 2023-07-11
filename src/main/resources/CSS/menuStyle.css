@@ -1,0 +1,186 @@
+TextField {
+    -fx-border-color: transparent transparent lightgray transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: rgba(0, 255, 255, 0.5);
+    -fx-text-fill: olive;
+    -fx-background-radius: 15 15 0 0;
+    -fx-alignment: center;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+TextField:focused {
+    -fx-background-color: #E0FFFF;
+}
+
+PasswordField {
+    -fx-border-color: transparent transparent lightgray transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: rgba(0, 255, 255, 0.5);
+    -fx-text-fill: olive;
+    -fx-background-radius: 15 15 0 0;
+    -fx-alignment: center;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+PasswordField:focused {
+    -fx-background-color: #E0FFFF;
+}
+
+ProgressBar {
+    -fx-background-color: transparent;
+}
+
+ProgressBar .bar {
+    -fx-background-color: olive;
+}
+
+ProgressBar .track {
+    -fx-background-color: lightgray;
+}
+
+RadioButton {
+    -fx-text-fill: olive;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+RadioButton .dot {
+    -fx-background-color: lightgray;
+}
+
+RadioButton:selected .dot {
+    -fx-background-color: olive;
+}
+
+RadioButton:hover {
+    -fx-cursor: hand;
+}
+
+ToggleButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: olive;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+ToggleButton:selected {
+    -fx-background-color: #ADD8E6;
+}
+
+ToggleButton:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #E0FFFF;
+}
+
+Slider {
+     -fx-background-color: transparent;
+ }
+
+ Slider .track {
+     -fx-background-color: lightgray;
+ }
+
+ Slider .thumb {
+     -fx-background-color: olive;
+ }
+
+Button {
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-background-color: white;
+    -fx-text-fill: olive;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #E0FFFF;
+}
+
+Button:pressed {
+    -fx-background-color: #ADD8E6;
+}
+
+.clickable {
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+
+Label {
+    -fx-text-fill: olive;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 18px;
+    -fx-font-weight: bolder;
+}
+
+Alert {
+    -fx-border-color: lightgray;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-text-fill: olive;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+Image {
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+ImageView {
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+}
+
+.back-ground {
+    -fx-background-color: white;
+}
+
+.pause-menu {
+    -fx-background-color: cornsilk;
+}
+
+.headers {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: olive;
+}
+
+.player2 {
+    -fx-text-fill: darkorchid;
+}
+
+.player3 {
+    -fx-text-fill: aqua;
+}
+
+.other-players {
+    -fx-text-fill: darkgray;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.MainMenuGraphicalController"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="back-ground"
+            prefHeight="800.0" prefWidth="500.0">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Main Menu" styleClass="headers"/>
+            <Button minWidth="200" maxWidth="200" text="New game" onMouseClicked="#newGame"/>
+            <Button minWidth="200" maxWidth="200" text="New PvP game" onMouseClicked="#pvpGame"/>
+            <Button minWidth="200" maxWidth="200" text="Continue game" fx:id="continueButton" onMouseClicked="#continueGame"/>
+            <Button minWidth="200" maxWidth="200" text="Profile menu" onMouseClicked="#enterProfileMenu"/>
+            <Button minWidth="200" maxWidth="200" text="Leaderboards" onMouseClicked="#enterLeadeboardMenu"/>
+            <Button minWidth="200" maxWidth="200" text="Settings" onMouseClicked="#enterSettings"/>
+            <Button minWidth="200" maxWidth="200" text="Exit game" onMouseClicked="#exitGame"/>
+        </VBox>
+    </center>
+</BorderPane>

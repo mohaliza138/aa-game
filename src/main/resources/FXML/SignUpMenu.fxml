@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.SignUpMenuGraphicalController"
+            stylesheets="@../CSS/menuStyle.css"
+            styleClass="back-ground"
+            prefHeight="500.0" prefWidth="1000.0">
+    <bottom>
+        <Button minWidth="200" maxWidth="200" text="Back" onMouseClicked="#backToStarterMenu"/>
+    </bottom>
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Enter your information below" styleClass="headers"/>
+            <TextField maxWidth="400" promptText="username" fx:id="username"/>
+            <PasswordField maxWidth="400" promptText="password" fx:id="password"/>
+            <Button minWidth="200" maxWidth="200" text="Sign up" onMouseClicked="#signUpUser"/>
+        </VBox>
+    </center>
+</BorderPane>
